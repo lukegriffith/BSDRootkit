@@ -1,12 +1,7 @@
-
-
-
 #include <sys/param.h>
 #include <sys/module.h>
 #include <sys/kernel.h>
 #include <sys/systm.h>
-
-
 
 /* The function called at load/unload. */
 
@@ -30,9 +25,6 @@ load(struct module *module, int cmd, void *arg)
 	default:
 		error = EOPNOTSUPP;
 		break;
-
-
-
 	}
 
 	return(error);
