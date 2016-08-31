@@ -1,0 +1,12 @@
+
+# used the below command to generate key
+# ssh-keygen -t rsa -b 4096 -C "<Email Address>"
+
+# start ssh-agent
+eval "$(ssh-agent -s)"
+
+# add github private key to agent 
+ssh-add ~/.ssh/github
+
+# push to master 
+github push -u origin master
